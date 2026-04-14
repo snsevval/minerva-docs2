@@ -1,0 +1,86 @@
+site_name: Minerva
+site_description: Materials Science Knowledge Graph System — ActiveScience v2
+site_url: https://snsevval.github.io/scientific-literature-knowledge-graph/
+repo_url: https://github.com/snsevval/scientific-literature-knowledge-graph
+repo_name: snsevval/minerva
+edit_uri: ""
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+    - announce.dismiss
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Quick Start: quickstart.md
+    - Installation: installation.md
+  - System:
+    - Architecture: system/architecture.md
+    - TTD-DR: system/ttddr.md
+    - TextbookKB: system/textbookkb.md
+    - Critic Layer: system/critic.md
+  - Evaluation:
+    - Benchmark: evaluation/benchmark.md
+    - Results: evaluation/results.md
+    - Dataset: evaluation/dataset.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/snsevval/scientific-literature-knowledge-graph
+  announce: |
+    <strong>Minerva v2.0</strong> — 83.3% on MatSci Fill-in-the-Blank Benchmark.
+    <a href="evaluation/results/">View Results &rarr;</a>

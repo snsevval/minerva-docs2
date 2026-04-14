@@ -1,0 +1,1636 @@
+{
+  "metadata": {
+    "total_questions": 200,
+    "format": "fill_in_the_blank",
+    "description": "Fill-in-the-blank benchmark from Callister, Shackelford, Kittel, and Heat Transfer textbooks",
+    "evaluation": "String match + LLM-as-judge for partial credit (0-3 scale)",
+    "sources": [
+      "Callister - Materials Science and Engineering",
+      "Shackelford - Introduction to Materials Science for Engineers (9th ed)",
+      "Solid State Physics (Kittel)",
+      "Heat Transfer textbook"
+    ],
+    "distribution": {
+      "by_difficulty": {
+        "easy": 51,
+        "medium": 92,
+        "hard": 48,
+        "expert": 9
+      },
+      "by_domain": {
+        "crystal_structure": 33,
+        "mechanical": 40,
+        "diffusion": 12,
+        "phase_diagram": 22,
+        "electronic": 42,
+        "ceramic": 14,
+        "thermal": 13,
+        "corrosion": 8,
+        "polymer": 10,
+        "materials_selection": 6
+      }
+    }
+  },
+  "questions": [
+    {
+      "question_id": "FQ001",
+      "question": "The atomic packing factor (APF) for an FCC crystal structure is ___.",
+      "ground_truth": "0.74",
+      "domain": "crystal_structure",
+      "difficulty": "easy",
+      "source": "Callister p.50 / Shackelford p.80"
+    },
+    {
+      "question_id": "FQ002",
+      "question": "The atomic packing factor (APF) for a BCC crystal structure is ___.",
+      "ground_truth": "0.68",
+      "domain": "crystal_structure",
+      "difficulty": "easy",
+      "source": "Callister p.46"
+    },
+    {
+      "question_id": "FQ003",
+      "question": "The atomic packing factor (APF) for a simple cubic (SC) structure is ___.",
+      "ground_truth": "0.52",
+      "domain": "crystal_structure",
+      "difficulty": "easy",
+      "source": "Callister p.46"
+    },
+    {
+      "question_id": "FQ004",
+      "question": "The number of atoms per unit cell in an FCC structure is ___.",
+      "ground_truth": "4",
+      "domain": "crystal_structure",
+      "difficulty": "easy",
+      "source": "Callister p.48"
+    },
+    {
+      "question_id": "FQ005",
+      "question": "The number of atoms per unit cell in a BCC structure is ___.",
+      "ground_truth": "2",
+      "domain": "crystal_structure",
+      "difficulty": "easy",
+      "source": "Callister p.46"
+    },
+    {
+      "question_id": "FQ006",
+      "question": "The coordination number for atoms in an FCC structure is ___.",
+      "ground_truth": "12",
+      "domain": "crystal_structure",
+      "difficulty": "easy",
+      "source": "Callister p.48"
+    },
+    {
+      "question_id": "FQ007",
+      "question": "The coordination number for atoms in a BCC structure is ___.",
+      "ground_truth": "8",
+      "domain": "crystal_structure",
+      "difficulty": "easy",
+      "source": "Callister p.46"
+    },
+    {
+      "question_id": "FQ008",
+      "question": "The ideal c/a ratio for the HCP structure is ___.",
+      "ground_truth": "1.633",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Callister p.52"
+    },
+    {
+      "question_id": "FQ009",
+      "question": "In an FCC structure, atoms touch along the face diagonal. The relationship between lattice parameter a and atomic radius r is ___.",
+      "ground_truth": "a = 2√2 r",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Callister p.48"
+    },
+    {
+      "question_id": "FQ010",
+      "question": "The number of distinct Bravais lattices in three dimensions is ___.",
+      "ground_truth": "14",
+      "domain": "crystal_structure",
+      "difficulty": "easy",
+      "source": "Callister p.44"
+    },
+    {
+      "question_id": "FQ011",
+      "question": "The minimum radius ratio (r/R) that can produce a coordination number of 6 in ionic bonding is ___.",
+      "ground_truth": "0.414",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Callister p.140 / Shackelford p.52"
+    },
+    {
+      "question_id": "FQ012",
+      "question": "The minimum radius ratio (r/R) that can produce a coordination number of 4 in ionic bonding is ___.",
+      "ground_truth": "0.225",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Shackelford p.52"
+    },
+    {
+      "question_id": "FQ013",
+      "question": "The minimum radius ratio (r/R) that can produce a coordination number of 8 is ___.",
+      "ground_truth": "0.732",
+      "domain": "crystal_structure",
+      "difficulty": "hard",
+      "source": "Shackelford p.55"
+    },
+    {
+      "question_id": "FQ014",
+      "question": "The minimum radius ratio (r/R) that can produce threefold (CN=3) coordination is ___.",
+      "ground_truth": "0.155",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Shackelford p.52"
+    },
+    {
+      "question_id": "FQ015",
+      "question": "Iron transforms from BCC (ferrite) to FCC (austenite) above ___ °C.",
+      "ground_truth": "912",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Callister p.60"
+    },
+    {
+      "question_id": "FQ016",
+      "question": "The bond angle in the tetrahedral configuration of covalent bonds with carbon is ___.",
+      "ground_truth": "109.5°",
+      "domain": "mechanical",
+      "difficulty": "easy",
+      "source": "Shackelford p.59"
+    },
+    {
+      "question_id": "FQ017",
+      "question": "The C-C single bond length is ___ nm.",
+      "ground_truth": "0.154",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Shackelford Table 2.2"
+    },
+    {
+      "question_id": "FQ018",
+      "question": "The C-C single bond energy is approximately ___ kJ/mol.",
+      "ground_truth": "370",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Shackelford Table 2.2"
+    },
+    {
+      "question_id": "FQ019",
+      "question": "The C=C double bond energy is approximately ___ kJ/mol.",
+      "ground_truth": "680",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Shackelford Table 2.2"
+    },
+    {
+      "question_id": "FQ020",
+      "question": "The equilibrium bond length for Na⁺-Cl⁻ in NaCl is ___ nm (using rNa⁺=0.098 nm, rCl⁻=0.181 nm).",
+      "ground_truth": "0.279 nm (or 0.28 nm)",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Shackelford p.49"
+    },
+    {
+      "question_id": "FQ021",
+      "question": "The secondary (van der Waals) bond energy for argon is approximately ___ kJ/mol.",
+      "ground_truth": "0.99",
+      "domain": "mechanical",
+      "difficulty": "hard",
+      "source": "Shackelford p.66"
+    },
+    {
+      "question_id": "FQ022",
+      "question": "The hydrogen bridge (water) secondary bond energy is approximately ___ kJ/mol.",
+      "ground_truth": "21",
+      "domain": "mechanical",
+      "difficulty": "hard",
+      "source": "Shackelford p.67"
+    },
+    {
+      "question_id": "FQ023",
+      "question": "Typical primary bond energies range from approximately ___ to ___ kJ/mol.",
+      "ground_truth": "200 to 700",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Shackelford p.65"
+    },
+    {
+      "question_id": "FQ024",
+      "question": "Fick's first law states J = ___ (fill in the formula).",
+      "ground_truth": "-D(dC/dx)",
+      "domain": "diffusion",
+      "difficulty": "medium",
+      "source": "Callister p.174"
+    },
+    {
+      "question_id": "FQ025",
+      "question": "The Arrhenius diffusion equation is D = ___.",
+      "ground_truth": "D₀ exp(-Qd/RT)",
+      "domain": "diffusion",
+      "difficulty": "medium",
+      "source": "Callister p.177"
+    },
+    {
+      "question_id": "FQ026",
+      "question": "The maximum solubility of carbon in austenite (FCC iron) is ___ wt%.",
+      "ground_truth": "2.14",
+      "domain": "phase_diagram",
+      "difficulty": "medium",
+      "source": "Callister p.318"
+    },
+    {
+      "question_id": "FQ027",
+      "question": "The maximum solubility of carbon in ferrite (BCC iron) is ___ wt%.",
+      "ground_truth": "0.022",
+      "domain": "phase_diagram",
+      "difficulty": "medium",
+      "source": "Callister p.318"
+    },
+    {
+      "question_id": "FQ028",
+      "question": "In Fick's second law, the diffusion penetration depth scales as ___ (in terms of D and t).",
+      "ground_truth": "√(Dt)",
+      "domain": "diffusion",
+      "difficulty": "medium",
+      "source": "Callister p.180"
+    },
+    {
+      "question_id": "FQ029",
+      "question": "The diffusion coefficient of C in γ-Fe at 700°C is approximately 5×10⁻¹² m²/s. After 2 hours, the approximate case depth x ≈ √(Dt) = ___ mm.",
+      "ground_truth": "0.19 mm (approximately 0.27 mm using 2√(Dt))",
+      "domain": "diffusion",
+      "difficulty": "hard",
+      "source": "Callister p.180"
+    },
+    {
+      "question_id": "FQ030",
+      "question": "Carburization is most effective with two simultaneous conditions: high temperature (increases D) and ___.",
+      "ground_truth": "sufficient time (for carbon to diffuse to desired depth)",
+      "domain": "diffusion",
+      "difficulty": "medium",
+      "source": "Callister p.180"
+    },
+    {
+      "question_id": "FQ031",
+      "question": "The slope of the ln(D) vs 1/T Arrhenius plot equals ___ (in terms of Qd and R).",
+      "ground_truth": "-Qd/R",
+      "domain": "diffusion",
+      "difficulty": "medium",
+      "source": "Callister p.177"
+    },
+    {
+      "question_id": "FQ032",
+      "question": "D₀ (preexponential factor in Arrhenius diffusion) is independent of ___.",
+      "ground_truth": "temperature",
+      "domain": "diffusion",
+      "difficulty": "easy",
+      "source": "Callister p.177"
+    },
+    {
+      "question_id": "FQ033",
+      "question": "Young's modulus E = ___ (in terms of stress σ and strain ε).",
+      "ground_truth": "σ/ε",
+      "domain": "mechanical",
+      "difficulty": "easy",
+      "source": "Callister p.160 / Shackelford p.169"
+    },
+    {
+      "question_id": "FQ034",
+      "question": "Poisson's ratio ν = ___ (in terms of lateral strain and axial strain).",
+      "ground_truth": "-ε_lateral/ε_axial",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.162 / Shackelford p.169"
+    },
+    {
+      "question_id": "FQ035",
+      "question": "The Hall-Petch equation is σ_y = ___.",
+      "ground_truth": "σ₀ + k_y × d^(-1/2)",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.192 / Shackelford p.192"
+    },
+    {
+      "question_id": "FQ036",
+      "question": "According to Hall-Petch, if grain size d is decreased by a factor of 4 (d → d/4), the strengthening term k_y × d^(-1/2) increases by a factor of ___.",
+      "ground_truth": "2",
+      "domain": "mechanical",
+      "difficulty": "hard",
+      "source": "Callister p.192"
+    },
+    {
+      "question_id": "FQ037",
+      "question": "The ASTM grain size number G is related to grain diameter d (in mm) by G = ___.",
+      "ground_truth": "-6.6457 log d - 3.298",
+      "domain": "mechanical",
+      "difficulty": "hard",
+      "source": "Callister p.157 / Shackelford p.157"
+    },
+    {
+      "question_id": "FQ038",
+      "question": "Dislocation density has units of ___.",
+      "ground_truth": "mm⁻² (per square millimeter) or total length per unit volume",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.270"
+    },
+    {
+      "question_id": "FQ039",
+      "question": "For an edge dislocation, the dislocation line motion is ___ to the applied shear stress.",
+      "ground_truth": "parallel",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.270"
+    },
+    {
+      "question_id": "FQ040",
+      "question": "For a screw dislocation, the dislocation line motion is ___ to the applied shear stress.",
+      "ground_truth": "perpendicular",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.270"
+    },
+    {
+      "question_id": "FQ041",
+      "question": "The three stages of creep are: primary (decreasing rate), secondary (___ rate), and tertiary (accelerating rate).",
+      "ground_truth": "steady-state (constant/minimum)",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.352 / Shackelford p.201"
+    },
+    {
+      "question_id": "FQ042",
+      "question": "Fatigue is failure under ___ loading at stress levels below the ultimate tensile strength.",
+      "ground_truth": "repeated cyclic",
+      "domain": "mechanical",
+      "difficulty": "easy",
+      "source": "Callister p.330 / Shackelford p.255"
+    },
+    {
+      "question_id": "FQ043",
+      "question": "The stress intensity factor at which unstable crack growth occurs is called ___.",
+      "ground_truth": "fracture toughness K_Ic (plane strain fracture toughness)",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.316 / Shackelford p.251"
+    },
+    {
+      "question_id": "FQ044",
+      "question": "The longitudinal elastic modulus of a fiber composite by rule of mixtures is Ec = ___.",
+      "ground_truth": "Ef×Vf + Em×Vm",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.916 / Shackelford p.425"
+    },
+    {
+      "question_id": "FQ045",
+      "question": "For E-glass/epoxy (Ef=72 GPa, Em=3 GPa, Vf=0.6), the longitudinal modulus Ec = ___ GPa.",
+      "ground_truth": "44.4",
+      "domain": "mechanical",
+      "difficulty": "hard",
+      "source": "Callister p.916"
+    },
+    {
+      "question_id": "FQ046",
+      "question": "The transverse modulus of a fiber composite follows 1/Ec = ___.",
+      "ground_truth": "Vf/Ef + Vm/Em",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.912 / Shackelford p.426"
+    },
+    {
+      "question_id": "FQ047",
+      "question": "The eutectoid composition in the Fe-C system is ___ wt% C.",
+      "ground_truth": "0.76",
+      "domain": "phase_diagram",
+      "difficulty": "medium",
+      "source": "Callister p.320"
+    },
+    {
+      "question_id": "FQ048",
+      "question": "The eutectoid temperature in the Fe-C system is ___ °C.",
+      "ground_truth": "727",
+      "domain": "phase_diagram",
+      "difficulty": "medium",
+      "source": "Callister p.320"
+    },
+    {
+      "question_id": "FQ049",
+      "question": "Pearlite is a lamellar mixture of ___ and cementite (Fe₃C).",
+      "ground_truth": "ferrite (α-iron)",
+      "domain": "phase_diagram",
+      "difficulty": "easy",
+      "source": "Callister p.320"
+    },
+    {
+      "question_id": "FQ050",
+      "question": "Cementite (Fe₃C) contains ___ wt% carbon.",
+      "ground_truth": "6.70",
+      "domain": "phase_diagram",
+      "difficulty": "hard",
+      "source": "Callister p.318"
+    },
+    {
+      "question_id": "FQ051",
+      "question": "Martensite forms by rapid quenching of austenite, trapping carbon in a ___ lattice.",
+      "ground_truth": "body-centered tetragonal (BCT)",
+      "domain": "phase_diagram",
+      "difficulty": "medium",
+      "source": "Callister p.340"
+    },
+    {
+      "question_id": "FQ052",
+      "question": "The three steps in precipitation hardening are: solution treatment → rapid quench → ___.",
+      "ground_truth": "aging (precipitation treatment)",
+      "domain": "phase_diagram",
+      "difficulty": "medium",
+      "source": "Callister p.482 / Shackelford p.346"
+    },
+    {
+      "question_id": "FQ053",
+      "question": "The Jominy end-quench test measures ___ vs distance from the quenched end.",
+      "ground_truth": "hardness",
+      "domain": "phase_diagram",
+      "difficulty": "easy",
+      "source": "Callister p.471 / Shackelford p.342"
+    },
+    {
+      "question_id": "FQ054",
+      "question": "Normalizing steel involves heating above the upper critical temperature and ___ cooling.",
+      "ground_truth": "air",
+      "domain": "phase_diagram",
+      "difficulty": "easy",
+      "source": "Callister p.346 / Shackelford p.346"
+    },
+    {
+      "question_id": "FQ055",
+      "question": "The maximum solubility of carbon in austenite occurs at ___ °C.",
+      "ground_truth": "1147",
+      "domain": "phase_diagram",
+      "difficulty": "hard",
+      "source": "Callister p.318"
+    },
+    {
+      "question_id": "FQ056",
+      "question": "In the eutectic reaction, one liquid transforms simultaneously into ___ different solid phases.",
+      "ground_truth": "two",
+      "domain": "phase_diagram",
+      "difficulty": "easy",
+      "source": "Callister p.290 / Shackelford p.284"
+    },
+    {
+      "question_id": "FQ057",
+      "question": "The band gap of silicon (Si) is ___ eV.",
+      "ground_truth": "1.1",
+      "domain": "electronic",
+      "difficulty": "easy",
+      "source": "Callister p.767"
+    },
+    {
+      "question_id": "FQ058",
+      "question": "The band gap of germanium (Ge) is ___ eV.",
+      "ground_truth": "0.67",
+      "domain": "electronic",
+      "difficulty": "easy",
+      "source": "Callister p.767"
+    },
+    {
+      "question_id": "FQ059",
+      "question": "The band gap of gallium arsenide (GaAs) is ___ eV.",
+      "ground_truth": "1.42",
+      "domain": "electronic",
+      "difficulty": "easy",
+      "source": "Callister p.767"
+    },
+    {
+      "question_id": "FQ060",
+      "question": "The band gap of zinc sulfide (ZnS) is ___ eV.",
+      "ground_truth": "3.66",
+      "domain": "electronic",
+      "difficulty": "easy",
+      "source": "Callister p.767"
+    },
+    {
+      "question_id": "FQ061",
+      "question": "The band gap of gallium nitride (GaN) is approximately ___ eV.",
+      "ground_truth": "3.4",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Callister+Graph"
+    },
+    {
+      "question_id": "FQ062",
+      "question": "A semiconductor with Eg = 1.1 eV absorbs photons up to a maximum wavelength of ___ nm (use hc = 1240 eV·nm).",
+      "ground_truth": "1128",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Callister p.788"
+    },
+    {
+      "question_id": "FQ063",
+      "question": "At the Fermi energy E = Ef, the Fermi-Dirac occupation probability f(Ef) = ___ at any temperature T > 0.",
+      "ground_truth": "0.5",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Callister p.754 / Solid State Physics p.108"
+    },
+    {
+      "question_id": "FQ064",
+      "question": "The electrical resistivity ρ and conductivity σ are related by σ = ___.",
+      "ground_truth": "1/ρ",
+      "domain": "electronic",
+      "difficulty": "easy",
+      "source": "Callister p.727 / Shackelford p.451"
+    },
+    {
+      "question_id": "FQ065",
+      "question": "Electrical conductivity of metals is typically ~10⁷ S/m; insulators have conductivity < ___ S/m.",
+      "ground_truth": "10⁻¹⁰",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Callister p.726 / Shackelford p.515"
+    },
+    {
+      "question_id": "FQ066",
+      "question": "The critical temperature Tc of niobium (Nb), the highest among elemental superconductors, is ___ K.",
+      "ground_truth": "9.2",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Callister p.217 / Solid State Physics p.217"
+    },
+    {
+      "question_id": "FQ067",
+      "question": "In the Shockley-Queisser limit, the maximum theoretical efficiency of a single p-n junction solar cell is approximately ___.",
+      "ground_truth": "33%",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Solid State Physics p.166 / Shackelford p.166"
+    },
+    {
+      "question_id": "FQ068",
+      "question": "In n-type doping, the majority carriers are ___.",
+      "ground_truth": "electrons",
+      "domain": "electronic",
+      "difficulty": "easy",
+      "source": "Callister p.758 / Shackelford p.487"
+    },
+    {
+      "question_id": "FQ069",
+      "question": "In p-type doping, the majority carriers are ___.",
+      "ground_truth": "holes",
+      "domain": "electronic",
+      "difficulty": "easy",
+      "source": "Callister p.760 / Shackelford p.487"
+    },
+    {
+      "question_id": "FQ070",
+      "question": "For ordinary window glass, the composition is approximately ___% silica (SiO₂) by weight.",
+      "ground_truth": "72",
+      "domain": "ceramic",
+      "difficulty": "hard",
+      "source": "Shackelford p.26"
+    },
+    {
+      "question_id": "FQ071",
+      "question": "The resistance of a 100 m copper wire (ρ=1.7×10⁻⁸ Ω·m) with cross-section 1 mm² is ___ Ω.",
+      "ground_truth": "1.7",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Callister p.727"
+    },
+    {
+      "question_id": "FQ072",
+      "question": "Thermal conductivity units are ___.",
+      "ground_truth": "W/(m·K)",
+      "domain": "thermal",
+      "difficulty": "easy",
+      "source": "Heat-transfer p.5 / Shackelford p.233"
+    },
+    {
+      "question_id": "FQ073",
+      "question": "Thermal diffusivity α = ___ (in terms of k, ρ, and cp).",
+      "ground_truth": "k/(ρ×cp)",
+      "domain": "thermal",
+      "difficulty": "medium",
+      "source": "Heat-transfer p.10 / Shackelford p.233"
+    },
+    {
+      "question_id": "FQ074",
+      "question": "The Fourier number Fo = ___ (dimensionless time in transient conduction).",
+      "ground_truth": "αt/L²",
+      "domain": "thermal",
+      "difficulty": "medium",
+      "source": "Heat-transfer p.227"
+    },
+    {
+      "question_id": "FQ075",
+      "question": "The Biot number Bi = ___ (ratio of convective to conductive resistance).",
+      "ground_truth": "hL/k",
+      "domain": "thermal",
+      "difficulty": "medium",
+      "source": "Heat-transfer p.227"
+    },
+    {
+      "question_id": "FQ076",
+      "question": "The lumped capacitance method is valid when Bi ___ 0.1.",
+      "ground_truth": "≤ (less than or equal to)",
+      "domain": "thermal",
+      "difficulty": "medium",
+      "source": "Heat-transfer p.220"
+    },
+    {
+      "question_id": "FQ077",
+      "question": "Newton's law of cooling states q = ___.",
+      "ground_truth": "hA(Ts - T∞)",
+      "domain": "thermal",
+      "difficulty": "easy",
+      "source": "Heat-transfer p.10 / Shackelford p.233"
+    },
+    {
+      "question_id": "FQ078",
+      "question": "The Stefan-Boltzmann law for radiation is q = ___.",
+      "ground_truth": "εσA(Ts⁴ - T∞⁴)",
+      "domain": "thermal",
+      "difficulty": "medium",
+      "source": "Heat-transfer p.15"
+    },
+    {
+      "question_id": "FQ079",
+      "question": "The error function erf(0) = ___.",
+      "ground_truth": "0",
+      "domain": "thermal",
+      "difficulty": "easy",
+      "source": "Heat-transfer p.238"
+    },
+    {
+      "question_id": "FQ080",
+      "question": "Thermal expansion occurs because increasing temperature increases the amplitude of ___, increasing mean atomic spacing.",
+      "ground_truth": "atomic vibrations",
+      "domain": "thermal",
+      "difficulty": "easy",
+      "source": "Callister p.720 / Shackelford p.229"
+    },
+    {
+      "question_id": "FQ081",
+      "question": "Stainless steel requires at least ___ wt% chromium to form a protective passive Cr₂O₃ layer.",
+      "ground_truth": "11",
+      "domain": "corrosion",
+      "difficulty": "easy",
+      "source": "Callister p.860"
+    },
+    {
+      "question_id": "FQ082",
+      "question": "In a galvanic couple, the ___ metal (more anodic) corrodes preferentially.",
+      "ground_truth": "less noble (more active)",
+      "domain": "corrosion",
+      "difficulty": "easy",
+      "source": "Callister p.850"
+    },
+    {
+      "question_id": "FQ083",
+      "question": "Cathodic protection prevents corrosion by making the metal the ___ in an electrochemical cell.",
+      "ground_truth": "cathode",
+      "domain": "corrosion",
+      "difficulty": "easy",
+      "source": "Callister p.862"
+    },
+    {
+      "question_id": "FQ084",
+      "question": "Stress corrosion cracking (SCC) occurs under combined action of ___ stress and a corrosive environment.",
+      "ground_truth": "tensile (sustained)",
+      "domain": "corrosion",
+      "difficulty": "medium",
+      "source": "Callister p.864 / Shackelford p.595"
+    },
+    {
+      "question_id": "FQ085",
+      "question": "In intergranular corrosion of stainless steel, sensitization occurs in the temperature range of ___ °C.",
+      "ground_truth": "425 to 815",
+      "domain": "corrosion",
+      "difficulty": "hard",
+      "source": "Callister p.861 / Shackelford p.601"
+    },
+    {
+      "question_id": "FQ086",
+      "question": "Sintering heats compacted ceramic powder ___ its melting point to bond particles.",
+      "ground_truth": "below",
+      "domain": "ceramic",
+      "difficulty": "easy",
+      "source": "Callister p.490 / Shackelford p.392"
+    },
+    {
+      "question_id": "FQ087",
+      "question": "Adding ___ wt% MgO to alumina (Lucalox patent) produces a nearly pore-free, translucent ceramic.",
+      "ground_truth": "0.1",
+      "domain": "ceramic",
+      "difficulty": "hard",
+      "source": "Shackelford p.23"
+    },
+    {
+      "question_id": "FQ088",
+      "question": "The glass transition temperature Tg marks the transition from ___ to glassy behavior in amorphous polymers.",
+      "ground_truth": "rubbery",
+      "domain": "polymer",
+      "difficulty": "medium",
+      "source": "Callister p.560 / Shackelford p.208"
+    },
+    {
+      "question_id": "FQ089",
+      "question": "Vulcanization introduces ___ cross-links between rubber chains to improve strength and elasticity.",
+      "ground_truth": "sulfur",
+      "domain": "polymer",
+      "difficulty": "medium",
+      "source": "Callister p.570 / Shackelford p.415"
+    },
+    {
+      "question_id": "FQ090",
+      "question": "The most common commercial polymer is ___, with repeat unit -(C₂H₄)-.",
+      "ground_truth": "polyethylene",
+      "domain": "polymer",
+      "difficulty": "easy",
+      "source": "Shackelford p.27"
+    },
+    {
+      "question_id": "FQ091",
+      "question": "The equilibrium number of vacancies follows Nv = N·exp(___ ), where Qv is formation energy and T is temperature.",
+      "ground_truth": "-Qv/kT",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Callister p.136"
+    },
+    {
+      "question_id": "FQ092",
+      "question": "A Schottky defect consists of a pair of ___ (cation + anion) in an ionic crystal.",
+      "ground_truth": "vacancies",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Callister p.140 / Shackelford p.126"
+    },
+    {
+      "question_id": "FQ093",
+      "question": "A Frenkel defect is an atom displaced from its lattice site to an ___ position.",
+      "ground_truth": "interstitial",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Callister p.140 / Shackelford p.126"
+    },
+    {
+      "question_id": "FQ094",
+      "question": "If vacancy formation energy is 0.9 eV, the vacancy concentration ratio N_v(600K)/N_v(300K) ≈ ___.",
+      "ground_truth": "10⁷ (approximately 3.6×10⁷)",
+      "domain": "crystal_structure",
+      "difficulty": "hard",
+      "source": "Callister p.136"
+    },
+    {
+      "question_id": "FQ095",
+      "question": "The piezoelectric effect is the generation of electric ___ in response to applied mechanical stress.",
+      "ground_truth": "polarization (voltage)",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Callister p.800 / Shackelford p.477"
+    },
+    {
+      "question_id": "FQ096",
+      "question": "The Meissner effect is the complete expulsion of ___ from a superconductor when cooled below Tc.",
+      "ground_truth": "magnetic flux (magnetic field)",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Callister p.220 / Shackelford p.465"
+    },
+    {
+      "question_id": "FQ097",
+      "question": "Type II superconductors have two critical fields Hc1 and Hc2. Between them, magnetic flux partially penetrates as quantized ___.",
+      "ground_truth": "vortices (flux vortices)",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Solid State Physics p.220"
+    },
+    {
+      "question_id": "FQ098",
+      "question": "In BCS theory, the energy gap Δ = ___ (in terms of Boltzmann constant k and critical temperature Tc).",
+      "ground_truth": "3.53 kBTc",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Solid State Physics p.228"
+    },
+    {
+      "question_id": "FQ099",
+      "question": "In the nearly-free electron model, energy gaps appear at Brillouin zone boundaries k = ___ (in terms of n, π, and lattice parameter a).",
+      "ground_truth": "±nπ/a",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Solid State Physics p.134"
+    },
+    {
+      "question_id": "FQ100",
+      "question": "The Hall effect is used to determine carrier type, ___, and carrier mobility.",
+      "ground_truth": "carrier concentration",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Callister p.730 / Shackelford p.461"
+    },
+    {
+      "question_id": "FQ101",
+      "question": "For lightweight structural applications, the key figure of merit is ___ (strength divided by density).",
+      "ground_truth": "specific strength (σ/ρ)",
+      "domain": "materials_selection",
+      "difficulty": "easy",
+      "source": "Callister p.20 / Shackelford p.579"
+    },
+    {
+      "question_id": "FQ102",
+      "question": "Carbon fiber reinforced polymer (CFRP) is preferred for aerospace structures due to its high ___ (modulus divided by density).",
+      "ground_truth": "specific modulus (E/ρ)",
+      "domain": "materials_selection",
+      "difficulty": "easy",
+      "source": "Callister p.20"
+    },
+    {
+      "question_id": "FQ103",
+      "question": "Cemented carbide (WC-Co) maintains high hardness at elevated temperatures because WC has a very high ___.",
+      "ground_truth": "melting point",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.706"
+    },
+    {
+      "question_id": "FQ104",
+      "question": "Yttria-stabilized zirconia (YSZ) is preferred for thermal barrier coatings because it has very low ___ (~2 W/m·K).",
+      "ground_truth": "thermal conductivity",
+      "domain": "thermal",
+      "difficulty": "medium",
+      "source": "Callister p.720"
+    },
+    {
+      "question_id": "FQ105",
+      "question": "For biomedical implants, the three most critical properties are biocompatibility, ___, and sufficient strength/fatigue resistance.",
+      "ground_truth": "corrosion resistance",
+      "domain": "materials_selection",
+      "difficulty": "medium",
+      "source": "Callister p.820 / Shackelford p.584"
+    },
+    {
+      "question_id": "FQ106",
+      "question": "Bloch's theorem states that the electron wavefunction in a periodic potential takes the form ψk(r) = ___.",
+      "ground_truth": "uk(r)·e^(ik·r), where uk has the periodicity of the lattice",
+      "domain": "electronic",
+      "difficulty": "expert",
+      "source": "Solid State Physics p.100"
+    },
+    {
+      "question_id": "FQ107",
+      "question": "The effective mass of an electron in a band is m* = ___ (in terms of ℏ and the band dispersion d²E/dk²).",
+      "ground_truth": "ℏ²/(d²E/dk²)",
+      "domain": "electronic",
+      "difficulty": "expert",
+      "source": "Solid State Physics p.130"
+    },
+    {
+      "question_id": "FQ108",
+      "question": "In the tight-binding model, the bandwidth equals ___ (in terms of coordination number z and hopping integral t).",
+      "ground_truth": "2z|t|",
+      "domain": "electronic",
+      "difficulty": "expert",
+      "source": "Solid State Physics p.14"
+    },
+    {
+      "question_id": "FQ109",
+      "question": "The London penetration depth λL is the length scale over which magnetic field ___ exponentially inside a superconductor.",
+      "ground_truth": "decays",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Solid State Physics p.220"
+    },
+    {
+      "question_id": "FQ110",
+      "question": "Cooper pairs are pairs of electrons with opposite momenta and spins, bound through ___ interaction.",
+      "ground_truth": "electron-phonon",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Solid State Physics p.228"
+    },
+    {
+      "question_id": "FQ111",
+      "question": "One mole of solid MgO occupies a cube 22.37 mm on a side. The density of MgO = ___ g/cm³.",
+      "ground_truth": "3.60",
+      "domain": "crystal_structure",
+      "difficulty": "hard",
+      "source": "Shackelford Example 2.2"
+    },
+    {
+      "question_id": "FQ112",
+      "question": "The density of copper is approximately ___ g/cm³.",
+      "ground_truth": "8.93",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Shackelford Appendix 1"
+    },
+    {
+      "question_id": "FQ113",
+      "question": "The density of aluminum is approximately ___ g/cm³.",
+      "ground_truth": "2.7",
+      "domain": "mechanical",
+      "difficulty": "easy",
+      "source": "Callister p.764"
+    },
+    {
+      "question_id": "FQ114",
+      "question": "The melting point of copper is ___ °C.",
+      "ground_truth": "1085 (1084.87)",
+      "domain": "thermal",
+      "difficulty": "medium",
+      "source": "Shackelford Table 2.4"
+    },
+    {
+      "question_id": "FQ115",
+      "question": "The melting point of tungsten (highest among all metals) is ___ °C.",
+      "ground_truth": "3422",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.60"
+    },
+    {
+      "question_id": "FQ116",
+      "question": "The melting point of NaCl (ionic solid) is ___ °C.",
+      "ground_truth": "801",
+      "domain": "crystal_structure",
+      "difficulty": "hard",
+      "source": "Shackelford Table 2.4"
+    },
+    {
+      "question_id": "FQ117",
+      "question": "In solid NaCl, each Na⁺ ion is surrounded by ___ Cl⁻ ions (coordination number).",
+      "ground_truth": "6",
+      "domain": "crystal_structure",
+      "difficulty": "easy",
+      "source": "Shackelford p.51"
+    },
+    {
+      "question_id": "FQ118",
+      "question": "The reaction energy released per mole during polymerization of ethylene (C=C → 2 C-C) is ___ kJ/mol.",
+      "ground_truth": "60",
+      "domain": "polymer",
+      "difficulty": "hard",
+      "source": "Shackelford Example 2.10"
+    },
+    {
+      "question_id": "FQ119",
+      "question": "The Si-O bond is approximately ___ % ionic and ___ % covalent in character.",
+      "ground_truth": "50% ionic and 50% covalent",
+      "domain": "crystal_structure",
+      "difficulty": "hard",
+      "source": "Shackelford p.58"
+    },
+    {
+      "question_id": "FQ120",
+      "question": "The coordination number for Si⁴⁺ in SiO₂ (radius ratio = 0.039/0.132 = 0.295) is ___.",
+      "ground_truth": "4",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Shackelford p.58 / Example 2.8"
+    },
+    {
+      "question_id": "FQ121",
+      "question": "Cold working increases dislocation density, which ___ yield strength (increases/decreases).",
+      "ground_truth": "increases",
+      "domain": "mechanical",
+      "difficulty": "easy",
+      "source": "Callister p.196"
+    },
+    {
+      "question_id": "FQ122",
+      "question": "Annealing above the recrystallization temperature causes new ___ grains to nucleate and grow.",
+      "ground_truth": "small stress-free equiaxed",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.212"
+    },
+    {
+      "question_id": "FQ123",
+      "question": "In precipitation hardening, the aging step produces fine ___ particles that pin dislocations.",
+      "ground_truth": "coherent precipitate",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.206"
+    },
+    {
+      "question_id": "FQ124",
+      "question": "Increasing carbon content in steel from 0.2 to 0.8 wt% significantly ___ yield strength.",
+      "ground_truth": "increases",
+      "domain": "phase_diagram",
+      "difficulty": "easy",
+      "source": "Callister p.324"
+    },
+    {
+      "question_id": "FQ125",
+      "question": "Higher sintering temperature for ceramics increases both density and ___.",
+      "ground_truth": "grain size",
+      "domain": "ceramic",
+      "difficulty": "medium",
+      "source": "Callister p.490"
+    },
+    {
+      "question_id": "FQ126",
+      "question": "The diffusion depth in carburization scales as ___ with time at constant temperature.",
+      "ground_truth": "square root of time (√t)",
+      "domain": "diffusion",
+      "difficulty": "medium",
+      "source": "Callister p.180"
+    },
+    {
+      "question_id": "FQ127",
+      "question": "Grain refinement uniquely increases both strength (via ___) AND toughness.",
+      "ground_truth": "Hall-Petch relationship (grain boundary blocking of dislocations)",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.192"
+    },
+    {
+      "question_id": "FQ128",
+      "question": "For n-type silicon, increasing doping concentration moves the Fermi level ___ the conduction band edge.",
+      "ground_truth": "closer to",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Callister p.758"
+    },
+    {
+      "question_id": "FQ129",
+      "question": "Ceramics are brittle because they lack sufficient mobile ___ to relieve stress at crack tips.",
+      "ground_truth": "dislocations",
+      "domain": "mechanical",
+      "difficulty": "easy",
+      "source": "Callister p.316"
+    },
+    {
+      "question_id": "FQ130",
+      "question": "The band gap of a semiconductor ___ (increases/decreases) with increasing temperature due to thermal expansion.",
+      "ground_truth": "decreases",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Callister p.754"
+    },
+    {
+      "question_id": "FQ131",
+      "question": "Metals have high electrical conductivity because they have ___ valence electrons in partially filled bands.",
+      "ground_truth": "delocalized (free)",
+      "domain": "electronic",
+      "difficulty": "easy",
+      "source": "Callister p.726 / Shackelford p.451"
+    },
+    {
+      "question_id": "FQ132",
+      "question": "The electrical resistivity of metals ___ with increasing temperature due to phonon scattering.",
+      "ground_truth": "increases",
+      "domain": "electronic",
+      "difficulty": "easy",
+      "source": "Callister p.728"
+    },
+    {
+      "question_id": "FQ133",
+      "question": "FCC iron dissolves more carbon than BCC iron because FCC has larger ___ sites.",
+      "ground_truth": "octahedral interstitial",
+      "domain": "phase_diagram",
+      "difficulty": "medium",
+      "source": "Callister p.318"
+    },
+    {
+      "question_id": "FQ134",
+      "question": "Martensite is harder than pearlite because carbon is trapped in a ___ lattice creating high strain.",
+      "ground_truth": "body-centered tetragonal (BCT) distorted",
+      "domain": "phase_diagram",
+      "difficulty": "medium",
+      "source": "Callister p.340"
+    },
+    {
+      "question_id": "FQ135",
+      "question": "Cementite (Fe₃C) makes steel harder but more brittle because it ___ dislocation motion.",
+      "ground_truth": "blocks",
+      "domain": "phase_diagram",
+      "difficulty": "easy",
+      "source": "Callister p.318"
+    },
+    {
+      "question_id": "FQ136",
+      "question": "For case hardening of gears from low-carbon steel, the correct heat treatment sequence is ___ → quench → temper.",
+      "ground_truth": "carburization",
+      "domain": "diffusion",
+      "difficulty": "medium",
+      "source": "Callister p.180"
+    },
+    {
+      "question_id": "FQ137",
+      "question": "For overhead electrical transmission lines, aluminum is preferred over copper despite lower conductivity because of its lower ___.",
+      "ground_truth": "density (2.7 vs 8.9 g/cm³)",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Callister p.764"
+    },
+    {
+      "question_id": "FQ138",
+      "question": "Galvanic corrosion between aluminum and steel can be prevented by ___ the metals from each other.",
+      "ground_truth": "electrically insulating",
+      "domain": "corrosion",
+      "difficulty": "medium",
+      "source": "Callister p.862"
+    },
+    {
+      "question_id": "FQ139",
+      "question": "For a pressure vessel at elevated temperature under sustained load, the critical failure mode is ___.",
+      "ground_truth": "creep",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.350"
+    },
+    {
+      "question_id": "FQ140",
+      "question": "Permanent magnets require high ___ (resistance to demagnetization) with sufficient remanence.",
+      "ground_truth": "coercivity",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Callister p.800"
+    },
+    {
+      "question_id": "FQ141",
+      "question": "The Shockley-Queisser efficiency limit is maximized at a band gap of approximately ___ to ___ eV.",
+      "ground_truth": "1.1 to 1.4",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Solid State Physics p.166"
+    },
+    {
+      "question_id": "FQ142",
+      "question": "In the quantum Hall effect, Hall conductance is quantized in multiples of ___.",
+      "ground_truth": "e²/h",
+      "domain": "electronic",
+      "difficulty": "expert",
+      "source": "Solid State Physics p.18"
+    },
+    {
+      "question_id": "FQ143",
+      "question": "The BCS energy gap relation is Δ = ___ (numerical coefficient × kBTc).",
+      "ground_truth": "3.53 kBTc",
+      "domain": "electronic",
+      "difficulty": "expert",
+      "source": "Solid State Physics p.228"
+    },
+    {
+      "question_id": "FQ144",
+      "question": "At T=0K in a metal, all states up to the Fermi energy are filled. At finite T, only electrons within ___ of Ef are thermally excited.",
+      "ground_truth": "~kT",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Solid State Physics p.108"
+    },
+    {
+      "question_id": "FQ145",
+      "question": "The cohesive energy of a solid is strongly correlated with its ___.",
+      "ground_truth": "melting temperature",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Solid State Physics p.84"
+    },
+    {
+      "question_id": "FQ146",
+      "question": "In the tight-binding model, wider bandwidth corresponds to ___ hopping integral (orbital overlap).",
+      "ground_truth": "stronger (larger)",
+      "domain": "electronic",
+      "difficulty": "expert",
+      "source": "Solid State Physics p.14"
+    },
+    {
+      "question_id": "FQ147",
+      "question": "The Pauli exclusion principle states that no two electrons can occupy the same ___.",
+      "ground_truth": "quantum state (same set of quantum numbers n, l, ml, ms)",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Solid State Physics p.108"
+    },
+    {
+      "question_id": "FQ148",
+      "question": "The Fermi surface in a metal separates ___ states from unoccupied states at T=0K.",
+      "ground_truth": "occupied (filled)",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Solid State Physics p.100"
+    },
+    {
+      "question_id": "FQ149",
+      "question": "Avogadro's number is ___ atoms per mole (to 4 significant figures).",
+      "ground_truth": "6.022 × 10²⁴",
+      "domain": "crystal_structure",
+      "difficulty": "easy",
+      "source": "Shackelford p.41"
+    },
+    {
+      "question_id": "FQ150",
+      "question": "One atomic mass unit (amu) equals approximately ___ grams.",
+      "ground_truth": "1.66 × 10⁻²⁴",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Shackelford p.40"
+    },
+    {
+      "question_id": "FQ151",
+      "question": "The six categories of engineering materials in Shackelford are: metals, ceramics, glasses, polymers, composites, and ___.",
+      "ground_truth": "semiconductors",
+      "domain": "materials_selection",
+      "difficulty": "easy",
+      "source": "Shackelford p.17"
+    },
+    {
+      "question_id": "FQ152",
+      "question": "Kevlar's strength-to-weight ratio is ___ times that of structural steel.",
+      "ground_truth": "5",
+      "domain": "mechanical",
+      "difficulty": "hard",
+      "source": "Shackelford p.30"
+    },
+    {
+      "question_id": "FQ153",
+      "question": "Nylon was invented in ___ at DuPont Company.",
+      "ground_truth": "1935",
+      "domain": "polymer",
+      "difficulty": "hard",
+      "source": "Shackelford p.27"
+    },
+    {
+      "question_id": "FQ154",
+      "question": "About ___ % porosity causes Al₂O₃ to become completely opaque.",
+      "ground_truth": "3",
+      "domain": "ceramic",
+      "difficulty": "hard",
+      "source": "Shackelford p.23"
+    },
+    {
+      "question_id": "FQ155",
+      "question": "About ___ % porosity causes Al₂O₃ to become translucent.",
+      "ground_truth": "0.3",
+      "domain": "ceramic",
+      "difficulty": "hard",
+      "source": "Shackelford p.23"
+    },
+    {
+      "question_id": "FQ156",
+      "question": "The Al₂O₃ (alumina) Lucalox sodium vapor lamp operates at approximately ___ °C.",
+      "ground_truth": "1000",
+      "domain": "ceramic",
+      "difficulty": "hard",
+      "source": "Shackelford p.23"
+    },
+    {
+      "question_id": "FQ157",
+      "question": "Translucent Al₂O₃ lamps provide ___ lumens/W compared to 15 lumens/W for conventional lightbulbs.",
+      "ground_truth": "100",
+      "domain": "ceramic",
+      "difficulty": "hard",
+      "source": "Shackelford p.23"
+    },
+    {
+      "question_id": "FQ158",
+      "question": "The melting point of Al₂O₃ (alumina) is ___ °C.",
+      "ground_truth": "2020",
+      "domain": "ceramic",
+      "difficulty": "medium",
+      "source": "Shackelford p.21"
+    },
+    {
+      "question_id": "FQ159",
+      "question": "The melting point of metallic aluminum (Al) is ___ °C.",
+      "ground_truth": "660",
+      "domain": "thermal",
+      "difficulty": "medium",
+      "source": "Shackelford p.21"
+    },
+    {
+      "question_id": "FQ160",
+      "question": "Electronegativity was defined by ___ (scientist name).",
+      "ground_truth": "Linus Pauling",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Shackelford p.63"
+    },
+    {
+      "question_id": "FQ161",
+      "question": "For a MgO-SiO2 ionic pair, the coulombic force Fc = -k₀(Z₁q)(Z₂q)/a². For Si⁴⁺ in SiO₂ with rSi=0.039nm, rO=0.132nm, the bond length a₀ = ___ nm.",
+      "ground_truth": "0.171",
+      "domain": "crystal_structure",
+      "difficulty": "hard",
+      "source": "Shackelford p.54"
+    },
+    {
+      "question_id": "FQ162",
+      "question": "The effective C-C bond length projected along the chain axis in polyethylene (bond angle 109.5°) is l = 0.154 × sin(54.75°) = ___ nm.",
+      "ground_truth": "0.126",
+      "domain": "polymer",
+      "difficulty": "hard",
+      "source": "Shackelford Example 2.11"
+    },
+    {
+      "question_id": "FQ163",
+      "question": "A polyethylene molecule with n=500 mers has a total extended length L = 500 × 2 × 0.126 nm = ___ nm.",
+      "ground_truth": "126",
+      "domain": "polymer",
+      "difficulty": "hard",
+      "source": "Shackelford Example 2.11"
+    },
+    {
+      "question_id": "FQ164",
+      "question": "The vacancy concentration increases from 300K to 600K by a factor of exp(17.4) ≈ ___.",
+      "ground_truth": "3.6×10⁷ (approximately 10⁷)",
+      "domain": "crystal_structure",
+      "difficulty": "hard",
+      "source": "Callister p.136"
+    },
+    {
+      "question_id": "FQ165",
+      "question": "If diffusion coefficient doubles from 500°C to 600°C, the approximate activation energy Qd ≈ ___ kJ/mol.",
+      "ground_truth": "30-40 (approximately 39)",
+      "domain": "diffusion",
+      "difficulty": "hard",
+      "source": "Callister p.177"
+    },
+    {
+      "question_id": "FQ166",
+      "question": "The endurance (fatigue) limit is the stress amplitude below which a material can endure ___ cycles without fatigue failure.",
+      "ground_truth": "essentially infinite (theoretically infinite)",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.333 / Shackelford p.255"
+    },
+    {
+      "question_id": "FQ167",
+      "question": "Bainite forms at temperatures ___ (above/between/below) the pearlite and martensite formation ranges in the TTT diagram.",
+      "ground_truth": "between",
+      "domain": "phase_diagram",
+      "difficulty": "medium",
+      "source": "Callister p.338 / Shackelford p.338"
+    },
+    {
+      "question_id": "FQ168",
+      "question": "High hardenability in steel means martensite forms at ___ (greater/lesser) depths from the quenched surface.",
+      "ground_truth": "greater",
+      "domain": "phase_diagram",
+      "difficulty": "medium",
+      "source": "Callister p.471 / Shackelford p.342"
+    },
+    {
+      "question_id": "FQ169",
+      "question": "The material tetrahedron in Shackelford has four corners: structure, properties, processing, and ___.",
+      "ground_truth": "performance",
+      "domain": "materials_selection",
+      "difficulty": "medium",
+      "source": "Shackelford p.32"
+    },
+    {
+      "question_id": "FQ170",
+      "question": "Fiberglass is a composite of glass fibers embedded in a ___ matrix.",
+      "ground_truth": "polymer (epoxy/resin)",
+      "domain": "mechanical",
+      "difficulty": "easy",
+      "source": "Shackelford p.29"
+    },
+    {
+      "question_id": "FQ171",
+      "question": "Glass-ceramics are produced by controlled ___ and crystallization of glass through heat treatment.",
+      "ground_truth": "nucleation",
+      "domain": "ceramic",
+      "difficulty": "medium",
+      "source": "Callister p.490 / Shackelford p.382"
+    },
+    {
+      "question_id": "FQ172",
+      "question": "In ceramics, approximately ___ % (or more) of commercially important ones are chemical compounds of metallic + one of 5 nonmetallic elements (C,N,O,P,S).",
+      "ground_truth": "vast majority (essentially all commercial ceramics)",
+      "domain": "ceramic",
+      "difficulty": "hard",
+      "source": "Shackelford p.24"
+    },
+    {
+      "question_id": "FQ173",
+      "question": "The Brinell hardness test uses a hardened steel or ___ ball as indenter.",
+      "ground_truth": "tungsten carbide (WC)",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.219 / Shackelford p.198"
+    },
+    {
+      "question_id": "FQ174",
+      "question": "Residual stresses arise from non-uniform ___ deformation or differential thermal contraction.",
+      "ground_truth": "plastic",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.732"
+    },
+    {
+      "question_id": "FQ175",
+      "question": "True stress-strain curve continues to ___ (rise/fall) until fracture, unlike engineering stress-strain which shows apparent softening.",
+      "ground_truth": "rise",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.170 / Shackelford p.169"
+    },
+    {
+      "question_id": "FQ176",
+      "question": "The phase rule F = C - P + ___ (Gibbs phase rule for a binary system at constant pressure).",
+      "ground_truth": "2 (or 1 if pressure is fixed: F = C - P + 1)",
+      "domain": "phase_diagram",
+      "difficulty": "hard",
+      "source": "Callister p.276 / Shackelford p.276"
+    },
+    {
+      "question_id": "FQ177",
+      "question": "The lever rule gives the weight fraction of the liquid phase as ___ (in a two-phase region).",
+      "ground_truth": "(Cα - C₀)/(Cα - CL) or equivalent lever rule formula",
+      "domain": "phase_diagram",
+      "difficulty": "hard",
+      "source": "Callister p.284 / Shackelford p.300"
+    },
+    {
+      "question_id": "FQ178",
+      "question": "Intrinsic semiconductor carrier concentration is proportional to ___ (exponential form).",
+      "ground_truth": "exp(-Eg/2kT)",
+      "domain": "electronic",
+      "difficulty": "hard",
+      "source": "Callister p.756 / Shackelford p.482"
+    },
+    {
+      "question_id": "FQ179",
+      "question": "The quantum Hall conductance is quantized in integer multiples of e²/h ≈ ___ S (siemens).",
+      "ground_truth": "3.87 × 10⁻⁵",
+      "domain": "electronic",
+      "difficulty": "expert",
+      "source": "Solid State Physics p.18"
+    },
+    {
+      "question_id": "FQ180",
+      "question": "In a metal at finite temperature T, only electrons within ~___ of the Fermi energy are thermally excited.",
+      "ground_truth": "kT (Boltzmann constant × temperature)",
+      "domain": "electronic",
+      "difficulty": "medium",
+      "source": "Solid State Physics p.108"
+    },
+    {
+      "question_id": "FQ181",
+      "question": "Dislocations (line defects) are the primary carriers of ___ deformation in crystalline metals.",
+      "ground_truth": "plastic",
+      "domain": "mechanical",
+      "difficulty": "easy",
+      "source": "Callister p.265"
+    },
+    {
+      "question_id": "FQ182",
+      "question": "Solid solution strengthening occurs when alloying elements create ___ fields that impede dislocation motion.",
+      "ground_truth": "lattice strain",
+      "domain": "mechanical",
+      "difficulty": "medium",
+      "source": "Callister p.192"
+    },
+    {
+      "question_id": "FQ183",
+      "question": "The theoretical APF for close-packed structures (FCC and HCP) is ___.",
+      "ground_truth": "0.74",
+      "domain": "crystal_structure",
+      "difficulty": "easy",
+      "source": "Callister p.50"
+    },
+    {
+      "question_id": "FQ184",
+      "question": "The Lorentz number relates thermal conductivity to electrical conductivity in metals: k/(σT) = ___ W·Ω/K².",
+      "ground_truth": "2.44 × 10⁻⁸",
+      "domain": "electronic",
+      "difficulty": "expert",
+      "source": "Callister p.728"
+    },
+    {
+      "question_id": "FQ185",
+      "question": "Plane strain fracture toughness K_Ic requires specimen thickness B ≥ ___ (formula involving K_Ic and σ_y).",
+      "ground_truth": "2.5(K_Ic/σ_y)²",
+      "domain": "mechanical",
+      "difficulty": "expert",
+      "source": "Callister p.316"
+    },
+    {
+      "question_id": "FQ186",
+      "question": "YAG (yttrium-aluminum-oxide) laser material has the formula ___.",
+      "ground_truth": "Y₃Al₅O₁₂",
+      "domain": "ceramic",
+      "difficulty": "hard",
+      "source": "Shackelford p.24"
+    },
+    {
+      "question_id": "FQ187",
+      "question": "The Iron Age replaced the Bronze Age and defines the period from ___ to 1 BC.",
+      "ground_truth": "1000 BC",
+      "domain": "materials_selection",
+      "difficulty": "medium",
+      "source": "Shackelford p.18"
+    },
+    {
+      "question_id": "FQ188",
+      "question": "Polyamide (nylon) was the first commercially successful polymer, initially used in toothbrush bristles in ___.",
+      "ground_truth": "1938",
+      "domain": "polymer",
+      "difficulty": "hard",
+      "source": "Shackelford p.27"
+    },
+    {
+      "question_id": "FQ189",
+      "question": "The Coulomb proportionality constant k₀ = ___ V·m/C.",
+      "ground_truth": "9 × 10⁹",
+      "domain": "crystal_structure",
+      "difficulty": "medium",
+      "source": "Shackelford p.47"
+    },
+    {
+      "question_id": "FQ190",
+      "question": "At the eutectoid point (0.76 wt% C, 727°C), austenite transforms to ___ upon slow cooling.",
+      "ground_truth": "pearlite (ferrite + cementite lamellar structure)",
+      "domain": "phase_diagram",
+      "difficulty": "easy",
+      "source": "Callister p.320"
+    },
+    {
+      "question_id": "FQ191",
+      "question": "Increasing sintering temperature increases ___ by accelerating diffusion and pore elimination.",
+      "ground_truth": "density",
+      "domain": "ceramic",
+      "difficulty": "easy",
+      "source": "Callister p.490"
+    },
+    {
+      "question_id": "FQ192",
+      "question": "The Wiedemann-Franz law states that metals with high electrical conductivity also have high ___ conductivity.",
+      "ground_truth": "thermal",
+      "domain": "thermal",
+      "difficulty": "medium",
+      "source": "Callister p.728"
+    },
+    {
+      "question_id": "FQ193",
+      "question": "The Glass transition temperature Tg for most common polymers is ___ (above/below) room temperature.",
+      "ground_truth": "varies; for polyethylene below (−120°C), for polystyrene above (+100°C)",
+      "domain": "polymer",
+      "difficulty": "hard",
+      "source": "Callister p.560"
+    },
+    {
+      "question_id": "FQ194",
+      "question": "Hydrogen embrittlement is the reduction in ductility caused by absorption of ___ hydrogen into the metal lattice.",
+      "ground_truth": "atomic",
+      "domain": "corrosion",
+      "difficulty": "medium",
+      "source": "Callister p.865 / Shackelford p.604"
+    },
+    {
+      "question_id": "FQ195",
+      "question": "In the galvanic series, platinum is ___ (most/least) noble and most resistant to corrosion.",
+      "ground_truth": "most",
+      "domain": "corrosion",
+      "difficulty": "easy",
+      "source": "Callister p.851"
+    },
+    {
+      "question_id": "FQ196",
+      "question": "Grain boundary diffusion is faster than lattice diffusion because grain boundaries have ___ activation energy.",
+      "ground_truth": "lower",
+      "domain": "diffusion",
+      "difficulty": "easy",
+      "source": "Callister p.184"
+    },
+    {
+      "question_id": "FQ197",
+      "question": "The diffusivity ordering from fastest to slowest is: ___ > grain boundary > lattice (volume) diffusion.",
+      "ground_truth": "surface",
+      "domain": "diffusion",
+      "difficulty": "medium",
+      "source": "Callister p.184 / Shackelford p.163"
+    },
+    {
+      "question_id": "FQ198",
+      "question": "In FCC iron (austenite), the maximum carbon solubility is 2.14 wt% at ___ °C.",
+      "ground_truth": "1147",
+      "domain": "phase_diagram",
+      "difficulty": "hard",
+      "source": "Callister p.318"
+    },
+    {
+      "question_id": "FQ199",
+      "question": "The Nd:YAG laser uses neodymium (Nd) in a ___ matrix to provide the lasing property.",
+      "ground_truth": "yttrium-aluminum-oxide (Y₃Al₅O₁₂) crystal",
+      "domain": "ceramic",
+      "difficulty": "hard",
+      "source": "Shackelford p.24"
+    },
+    {
+      "question_id": "FQ200",
+      "question": "In polyethylene, the weak link that causes softening above ~120°C is the ___ bonding between adjacent molecular chains.",
+      "ground_truth": "secondary (van der Waals)",
+      "domain": "polymer",
+      "difficulty": "medium",
+      "source": "Shackelford p.68"
+    }
+  ]
+}
